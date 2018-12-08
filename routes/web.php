@@ -36,9 +36,15 @@ Route::post('/posts/store',[
   'uses'=>'PostsController@store',
   'as'=>'posts.store'
 ]);
+// for categories
 Route::get('/categories/create',[
  'uses'=>'categoriesController@create',
  'as'=>'categories.create'
+
+]);
+Route::post('/categories/store',[
+ 'uses'=>'categoriesController@store',
+ 'as'=>'categories.store'
 
 ]);
 
