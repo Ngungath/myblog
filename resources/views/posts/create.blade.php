@@ -19,7 +19,7 @@
 		
 	</div>
 	<div class="panel-body">
-		<form method="post" action="{{route('posts.store')}}">
+		<form method="post" action="{{route('posts.store')}}" enctype="multipart/form-data">
 			{{csrf_field()}}
 			<div class="form-group">
 				<label for="title">Title</label>
