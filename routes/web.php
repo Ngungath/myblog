@@ -51,6 +51,11 @@ Route::get('/categories/destroy/{id}',[
  'uses'=>'categoriesController@destroy',
  'as'=>'categories.destroy'
 ]);
+Route::post('/categories/update/{id}',[
+ 'uses'=>'categoriesController@update',
+ 'as'=>'categories.update'
+]);
+
 Route::get('/categories/create',[
  'uses'=>'categoriesController@create',
  'as'=>'categories.create'
