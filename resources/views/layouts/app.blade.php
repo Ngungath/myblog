@@ -80,10 +80,14 @@
                         <li class="list-group-item"><a href="{{route('home')}}">Home</a>
                         </li>
                         <li class="list-group-item">
-                        <a href="{{route('posts.create')}}">Create New Post</a>
+                        <a href="{{route('categories')}}">Categories</a>
                         </li>
                         <li class="list-group-item">
                         <a href="{{route('categories.create')}}">Create Category</a>
+                        </li>
+
+                        <li class="list-group-item">
+                        <a href="{{route('posts.create')}}">Create New Post</a>
                         </li>
                     </ul>
                     

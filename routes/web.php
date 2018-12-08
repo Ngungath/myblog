@@ -36,7 +36,21 @@ Route::post('/posts/store',[
   'uses'=>'PostsController@store',
   'as'=>'posts.store'
 ]);
+
 // for categories
+Route::get('/categories',[
+  'uses'=>'categoriesController@index',
+  'as'=>'categories'
+]);
+Route::get('/categories/edit/{id}',[
+ 'uses'=>'categoriesController@edit',
+ 'as'=>'categories.edit'
+
+]);
+Route::get('/categories/destroy/{id}',[
+ 'uses'=>'categoriesController@destroy',
+ 'as'=>'categories.destroy'
+]);
 Route::get('/categories/create',[
  'uses'=>'categoriesController@create',
  'as'=>'categories.create'
